@@ -27,7 +27,7 @@ This is a simple Flask application that provides a translation API using python 
 1. Start the Flask server:
 
     ```bash
-    python app.py
+    python translation_app.py --host 0.0.0.0 --port 6868
     ```
 
 2. Send a POST request to `http://localhost:6868/translate` with the following JSON payload:
