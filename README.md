@@ -39,7 +39,7 @@ This is a simple Flask application that provides a translation API using python 
 
     ```json
     {
-        "translated_text": "Bonjour, le monde!"
+        "translated_text": "你好世界！"
     }
     ```
 
@@ -48,6 +48,6 @@ This is a simple Flask application that provides a translation API using python 
     ```bash
     curl -X POST http://localhost:6868/translate \
         -H 'Content-Type: application/json' \
-        -d '{"text":"hi, how are you", "target_language": "zh-tw"}'
-    # {"translated_text": "你好你好嗎"}
+        -d '{"text":"Hello, world!", "target_language": "zh-tw"}'
+    # {"translated_text": "你好世界！"}
     ```
